@@ -1,7 +1,7 @@
 import * as UserService from "./services/user.js";
 import express from "express";
 
-const port = 80;
+const port = 80; //port sesuai dengan port di apache
 const host = "localhost";
 const app = express();
 app.use(express.json());

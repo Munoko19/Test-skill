@@ -202,7 +202,7 @@ export const taskDelete = async (request, response, next) => {
     if (result.affectedRows > 0) {
       successResponse(response, "success", {});
     } else {
-      errorResponse(response, `user dengan id ${id} tidak ditemukan`, 404);
+      errorResponse(response, `user dengan id ${id} tidak ada`, 404);
     }
   } catch (error) {
     next(error);

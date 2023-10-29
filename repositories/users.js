@@ -59,7 +59,7 @@ const getIdTask = (id) => {
 };
 
 const deleteTask = (id) => {
-  const query = "DELETE FROM task WHERE task_id = ?";
+  const query = "DELETE FROM task WHERE task_id = ? ";
 
   return dbPool.query(query, [id]);
 };
